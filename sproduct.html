@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reeb wardrobe</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    
+	
+</head>
+<body>
+
+    <section id = "header"> 
+        <a href="#"><img src="images/logo.jpg"class="logo" alt=""></a>
+        <div> 
+            <ul id= "navbar">
+                <li> <a  href ="index.html">Home</a></li>
+                <li> <a class="active" href ="shop.html">Shop</a></li>
+                <li> <a href ="blog.html">Blog</a></li>
+                <li> <a href ="about.html">About</a></li>
+                <li> <a href ="contact.html">Contact</a></li>
+              <li id="lg-bag"> <a href="cart.html"> <i class="fa fa-shopping-cart"> </i></i></a></li>
+              <a href="#" id="close"><i class="fa fa-times"> </i></a> 
+
+            </ul>
+        </div>
+        <div id="mobile">
+         <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+         <i id="bar" class="fas fa-out"></i> 
+        </div>
+ 
+    </section>
+ <section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+    <img src="images/products/f1.jpg" width=" 25%" id="MainImg"  alt="" >
+    <div class="small-img-group">
+    <div class="small-img-col">
+    <img src="images/products/f2.jpg" width="30%" class="small-img"  alt="">
+    </div>
+    <div class="small-img-col">
+        <img src="images/products/f3.jpg" width="30%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="images/products/f4.jpg" width="30%"class="fas fa-wizards-of-the-coast    "></i>  
+            </div>
+            <div class="small-img-col">
+                <img src="images/products/f5.jpg" width="30%"class="fas fa-wizards-of-the-coast    "></i>  
+                </div>
+    </div>
+</div>
+<div class="single-pro-details">
+    <h6> Home/T -shirt</h6>
+    <h4> Mens Fashion T shirt</h4>  
+    <h2>&13</h2>
+    <select> 
+        <option>Select size</option>
+        <option>XL</option>
+        <option>XXL</option>
+        <option>Small</option>
+        <option>Large</option>
+    </select>
+    <input type="number" value="1">
+    <button class="normal">ADD TO Cart</button>
+    <h4> Product Details</h4>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Tenetur sequi natus placeat optio, excepturi, recusandae ipsum ab reprehenderit fugiat assumenda eos similique repudiandae a suscipit id. Repudiandae itaque architecto quae?</span>
+</div>
+ </section>
+
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign up for Newsletter</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email adress">
+        <button class="normal">Sign up</button>
+    </div>
+</section>
+<footer class="section-p1">
+    <div class="col">
+    <img class="logo" src="images/logo.jpg" alt="">
+    <h4>Contact</h4>
+    <p><strong>Adress:</strong> Gulberg Greens</p>
+    <p><strong>Phone:</strong> +01 222 365 /(+91) 01 2345 6789</p>
+    <p><strong>Hours:</strong> 8:00 am to 10:00 pm, Mon-Sat</p>
+    <h4>Follow us</h4>
+    <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-pintrest-p"></i>
+        <i class="fab fa-youtube"></i>
+    </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <p><a href="#">Delivery Information</a></p>
+       <p><a href="#">Privacy Policy</a></p> 
+       <p><a href="#">Terms and Conditions</a></p> 
+        <p><a href="#">Contact us</a></p>
+    </div>
+    <div class="col">
+        <h4>Account</h4>
+       <p> <a href="#">Sign in</a> </p>
+       <p><a href="#">View Cart</a></p> 
+       <p><a href="#">My Wishlist</a></p> 
+       <p><a href="#">Track my Order</a></p> 
+        <p><a href="#">Help</a></p>
+    </div>
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="images/Apple pay.png" alt="">
+            <img src="images/google pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>@ 2021, Tech2 etc -Html Css Ecommerce Template</p>
+        </div>
+    </div>
+
+</footer>
+<script>
+    var MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementsByClassName("small-img");
+
+   
+    smallimg[0].onclick = function() {
+        MainImg.src = smallimg[0].src;
+    }
+   
+    smallimg[1].onclick = function() {
+        MainImg.src = smallimg[1].src;
+    }
+
+    smallimg[2].onclick = function() {
+        MainImg.src = smallimg[2].src;
+    }
+
+    smallimg[3].onclick = function() {
+        MainImg.src = smallimg[3].src;
+    }
+   
+</script>
+  <script src="script.js"> </script>
+</body> 
+</html> 
